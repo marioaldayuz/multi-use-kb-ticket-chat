@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.kb-widget {
+  @apply font-sans fixed bottom-5 right-5 w-96 max-w-[calc(100vw-2.5rem)] h-[600px] max-h-[calc(100vh-2.5rem)] 
+         flex flex-col overflow-hidden rounded-lg shadow-xl z-[999999] transition-transform duration-200;
+}
+
+.kb-widget.light {
+  @apply bg-white text-gray-900;
+}
+
+.kb-widget.dark {
+  @apply bg-gray-900 text-gray-100;
+}
+
+.kb-widget-header {
+  @apply p-4 border-b flex items-center cursor-grab select-none;
+}
+
+.kb-widget-header:active {
+  @apply cursor-grabbing;
+}
+
+.kb-widget-content {
+  @apply flex-1 overflow-y-auto p-4;
+}
+
+.kb-widget-error {
+  @apply p-4 bg-red-50 text-red-700 rounded-md text-center;
+}
+
+.kb-widget-loading {
+  @apply flex items-center justify-center h-full;
+}
+
+.kb-widget-loading-spinner {
+  @apply w-6 h-6 border-2 border-gray-200 border-t-blue-600 rounded-full animate-spin;
+}

@@ -1,0 +1,35 @@
+/* CKEditor container styles */
+.ck-editor__editable {
+  min-height: 300px;
+  max-height: 600px;
+  overflow-y: auto !important;
+}
+
+/* Toolbar styles */
+.ck.ck-toolbar {
+  border: none !important;
+  border-bottom: 1px solid #e5e7eb !important;
+  background: #f9fafb !important;
+}
+
+/* Content area styles */
+.ck.ck-editor__editable {
+  padding: 1rem !important;
+  background: white !important;
+}
+
+/* Focus styles */
+.ck.ck-editor__editable:focus {
+  border-color: #3b82f6 !important;
+}
+
+/* Button hover styles */
+.ck.ck-button:hover {
+  background: #f3f4f6 !important;
+}
+
+/* Active button styles */
+.ck.ck-button.ck-on {
+  background: #e5e7eb !important;
+  color: #1f2937 !important;
+}
